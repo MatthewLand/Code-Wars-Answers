@@ -1,0 +1,18 @@
+//Question
+//In this kata you will create a function
+//that takes a list of non-negative integers
+//and strings and returns a new list with
+//the strings filtered out.
+
+//Answer
+function filter_list(l) {
+  var fL = [];
+  for (var i=0; i <= l.length; i++) {
+    var lCur = l[i];
+    if (typeof lCur == "number") {
+      fL.push(lCur);
+    }
+  }
+  console.log(fL);
+  return(fL);
+}
